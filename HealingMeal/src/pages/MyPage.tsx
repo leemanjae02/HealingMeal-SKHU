@@ -82,6 +82,7 @@ const MyPage = observer(() => {
     }
   }, []);
 
+
   const getPassword = async () => {
     try {
       const response = await CustomAxios.post(

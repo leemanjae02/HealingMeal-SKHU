@@ -127,11 +127,6 @@ const MainPage = observer(() => {
       try {
         await AuthStore.checkLoginStatus();
         if (AuthStore.isLoggedIn) {
-          console.log(
-            AuthStore.isLoggedIn,
-            AuthStore.userID,
-            AuthStore.userName
-          );
           await checkSurvey();
         }
       } catch (error) {
@@ -172,7 +167,6 @@ const MainPage = observer(() => {
       0, //0분
       0 //0초
     );
-    console.log("자정까지 남은 밀리초", midnight.getTime() - now.getTime());
     return midnight.getTime() - now.getTime();
   };
 
@@ -181,7 +175,7 @@ const MainPage = observer(() => {
 
     const timer = setTimeout(() => {
       //매일 자정 실행
-      DeleteMeal();
+      window.location.reload();
     }, nextMidnightTime);
 
     return () => {
@@ -386,17 +380,17 @@ const MainPage = observer(() => {
     navigate("/signup");
   };
 
-  const DeleteMeal = async () => {
-    try {
-      const response = await CustomAxios.delete("/delete");
-      if (response.status === 200) {
-        console.log("식단초기화 성공", response.data);
-        await checkMeal();
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const DeleteMeal = async () => {
+  //   try {
+  //     const response = await CustomAxios.delete("/delete");
+  //     if (response.status === 200) {
+  //       console.log("식단초기화 성공", response.data);
+  //       await checkMeal();
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   const foods = [
     {
