@@ -1,81 +1,60 @@
 # Healing Meal Project
-GDSC Solution Challenge 2024
 <br>
-- FrontEnd Repo : https://github.com/leemanjae02/HealingMeal-FrontEnd
-- BackEnd Repo : https://github.com/zzdh8/healingmeal-back
+<br>
+
 
 # Member
-Jinyong Hyun|Inho Choi| Manjae Lee|bojung Kim|
-|:---:|:---:|:---:|:---:|
-|<img src= "https://github.com/leemanjae02/HealingMeal-FrontEnd/assets/144561017/48711f54-230b-43da-8cbc-e62da7a3d1ab" width="250" height="250">|<img src="https://github.com/leemanjae02/HealingMeal-FrontEnd/assets/144561017/fdbf9d5d-04e2-4078-affc-5dabd62f32af" width="250"  height="250">|<img src="https://github.com/leemanjae02/HealingMeal-FrontEnd/assets/144561017/47264385-5bed-4f69-abd6-5c0dd9650625" width="250"  height="250">|<img  src="https://github.com/leemanjae02/HealingMeal-FrontEnd/assets/144561017/3be7d6e9-ae2a-47f1-8a54-32926a60f1f0" width="250"  height="250">|
-|Backend|Backend|Frontend|PM| 
-
-
-
- 
+| Backend      | Backend    |  Frontend  |
+|------------|------------|------------|
+|--------------|------------|------------|
+| Jinyong Hyun | Inho Choi  | Manjae Lee |
+<br>
 <br>
 
-# Target UN-SDGs
-## Goal 3. Good Health and Well-Being
-<img width="351" alt="스크린샷 2024-02-15 오후 5 17 47" src="https://github.com/inhooo00/healingmeal-back/assets/129029251/c7af8650-49f7-4219-a119-04e8fd5355c0">
+# Repository
+- BackEnd : https://github.com/inhooo00/HealingMeal-SKHU
+- FrontEnd : https://github.com/leemanjae02/HealingMeal-SKHU
+<br><br>
+# 작품 개요
+현대 사회에서 당뇨병 유병률 수치가 증가함에따라 모든 세대에서 당뇨병 질환에 대한 심각성 인지 정도가 증가하고 있습니다. 이에따라 식품 영양 관련 정보의 중요성이 나날이 증가하여, 소비자들이 식품 선택 시 영양성분에 대한 정확하고 신뢰할 수 있는 정보가 필요합니다.  현존하는 다양한 서비스들은 개인정보를 입력하여 개인에 맞춤형 식단이 아닌 일반화된 식단만 제공되어 있습니다. 상당수의 서비스가 상업성 목적을 가지고 있고 사용자의 건강 개선보다는 식단판매에 중점을 두고 있습니다.
+그래서 저희 서비스는 공익성을 목적으로 하며, 당뇨병 환자의 건강 개선과 삶의 질 향상에 초점을 맞추었습니다. 개인화된 시대에 적합한 개인의 기초대사량, 활동량 등을 고려하여 당뇨 맞춤형 식단을 제공합니다.
 
-# About our solution
-- Diabetes has established itself as one of the most significant diseases globally among modern people. 
-- For these diabetic patients, we have planned ___**Healing Meal**___. It is a service that provides customized diets and personal diet management for type 2 diabetes patients. 
-- Healing Meal does not merely recommend diets; it can create a diet based on the patient's preferences through surveys. 
-- It generates a reasonable diet based on the patient's various tastes and current physical information. Furthermore, it also provides the efficacy of the diet.
-- You can save and manage your preferred diet using the favorite feature.
+<br><br>
 
-# App Demo
-<img width="1512" alt="스크린샷 2024-02-20 오후 11 28 01" src="https://github.com/leemanjae02/HealingMeal-FrontEnd/assets/144561017/85021836-0f20-4ab2-a26c-3dbe93acba6d">
-<img width="1512" alt="스크린샷 2024-02-20 오후 11 35 21" src="https://github.com/leemanjae02/HealingMeal-FrontEnd/assets/144561017/5aecaa57-68b0-4c7e-a8ac-b6f658b48b6c">
-<img width="1512" alt="스크린샷 2024-02-20 오후 11 35 33" src="https://github.com/leemanjae02/HealingMeal-FrontEnd/assets/144561017/4cb495a6-0374-450e-b726-b6de9a45b632">
-<img width="1512" alt="스크린샷 2024-02-20 오후 11 28 40" src="https://github.com/leemanjae02/HealingMeal-FrontEnd/assets/144561017/a22bd163-b609-4e1a-90dd-b0157f226352">
-<img width="1512" alt="스크린샷 2024-02-20 오후 11 30 21" src="https://github.com/leemanjae02/HealingMeal-FrontEnd/assets/144561017/0d952c53-065a-4564-825d-1e59cf3df6f1">
-<img width="1512" alt="스크린샷 2024-02-20 오후 11 39 57" src="https://github.com/leemanjae02/HealingMeal-FrontEnd/assets/144561017/2cd503a7-bde7-4f69-ae52-d67ea74fc103">
+## 주요 기능
+### 1. 로그인과 회원가입을 통해 개인정보를 등록
+- 나에게 맞는 식단을 생성하기 위한 개인정보를 등록합니다
+- 음식 필터를 통해서 선호하지 않는 음식을 등록합니다
 
+### 2. 나의 맞춤형 식단 생성
+- 나의 개인정보와 음식 필터의 정보를 가지고 식단을 생성합니다
+- 음식의 사진과 칼로리 등 여러 정보를 알 수 있습니다
+- 생성된 식단 안에 있는 음식의 정보도 ai가 기술합니다
+- 식단은 자정이 지나면 새로운 식단을 제공합니다
 
-# About Implementation
-## Backend
-### Tech Stack
-- JDK-17
-- Spring, Spring Boot
-- Spring Data JDBC & JPA
-- Spring Security, Spring Session JDBC
-- MySQL
-- Docker, Docker-compose
-- JSON Simple, JSON DATA PARSING
-- Spring Mail
-- Spring AI
-- Google Cloud Platform(compute engine, cloud sql, cloud storage, load balancer)
+### 3. 메뉴 즐겨찾기 추가
+- 계속 간직하고 싶은 메뉴는 즐겨찾기를 통해 다시 볼 수 있습니다
 
-## Frontend
-### Tech Stack
-- React 
-- Vercel
-- mobX
-- vite
-- css module, less
-- Axios
+<br><br>
 
-## Architecture 
-![healingmeal_architecture](https://github.com/leemanjae02/HealingMeal-FrontEnd/assets/144561017/5bf2d67c-9e8c-4295-9e46-fd911631fe2b)
+# 개발 일정
+24년 1월 1일 ~ 24년 4월 11일
+
+<br><br>
+
+## 기술 스택
+### Environment
+<img src="https://img.shields.io/badge/intellij idea-000000?style=for-the-badge&logo=intellij idea&logoColor=white">
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+
+### Development
+<img src="https://img.shields.io/badge/google cloud-4285F4?style=for-the-badge&logo=google cloud&logoColor=white">
+<img src="https://img.shields.io/badge/spring boot-6DB33F?style=for-the-badge&logo=spring boot&logoColor=white">
+<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
+<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> 
 
 
-1. The Frontend Deployment was done through the Vercel cloud platform.
-2. I create a Dockerfile to build an image of **HealingMeal**. And Push the image to the DockerHub.
-3. The Compute Engine, an API of Google Cloud Platform, was used to create virtual machine instances.
-4. Then, I create a docker-compose.yml file with informaion about Working Spring Boot(Cloud SQL, API-Key, Mail SMTP).
-5. Finally, I can run a command like "docker compose up -d" to start HealingMeal application container.
-6. In addition, I use Google Cloud's load balancer to manage the SSL certificate. So Everyone can access Our Service.
-
-## ERD
-<img width="566" alt="2024-02-23_2 22 45" src="https://github.com/leemanjae02/HealingMeal-FrontEnd/assets/144561017/b2bfae0d-bec5-4da5-8233-618be354270b">
-
-
-# Introduction Video Link
-
-# About use of LLM API
-- When the diet for user is generated, it is customized for the user with breakfast, lunch, dinner, and two snacks.
-- Additionally, If the user's diet information is sent through the API, the user can find out the efficacy of the diet by LLM.
-- if Users read this efficacy information and prefer the diet, users can save the diet as a bookmark.
+### Communication
+<img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"> 
+<img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"> 
