@@ -35,7 +35,7 @@ const MyInforChangeComponents: React.FunctionComponent<MyInforChangeProps> = ({
 
   const [showbmi, setShowBMI] = useState<number>(0); //bmi값
   const [weightLevel, setWeightLevel] = useState<string>(""); // 최종결과페이지 결과메시지
-  const [checkPassword, setCheckPassword] = useState<boolean>(false); // 새 비밀번호 입력창을 띄우기 위한 상탸
+  const [checkPassword, setCheckPassword] = useState<boolean>(false); // 새 비밀번호 입력창을 띄우기 위한 상태
 
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [statusMSG, setStatusMSG] = useState<string>("");
@@ -46,8 +46,6 @@ const MyInforChangeComponents: React.FunctionComponent<MyInforChangeProps> = ({
   const [isValidBirthDateMSG, setIsValidBirthDateMSG] = useState<string>("");
   const [isValidGender, setIsValidGender] = useState<boolean>(false);
   const [isValidGenderMSG, setIsValidGenderMSG] = useState<string>("");
-  // const [isValidPassword, setIsValidPassword] = useState<boolean>(false);
-  // const [isValidPasswordMSG, setIsValidPasswordMSG] = useState<string>("");
   const [isValidEmail, setIsValidEmail] = useState<boolean>(false);
   const [isValidEmailMSG, setIsValidEmailMSG] = useState<string>("");
   const [isValidPhoneNumber, setIsValidPhoneNumber] = useState<boolean>(false);
@@ -163,7 +161,7 @@ const MyInforChangeComponents: React.FunctionComponent<MyInforChangeProps> = ({
     ],
   };
 
-  console.log("제외음식", selectedFoods.stewsAndHotpots);
+  // console.log("제외음식", selectedFoods.stewsAndHotpots);
   const handleSelectAll = (category: string, selectAll: boolean) => {
     const allFoods = categorys[category] || [];
     const currentSelectedFoods = selectedFoods[category] || [];
@@ -355,6 +353,7 @@ const MyInforChangeComponents: React.FunctionComponent<MyInforChangeProps> = ({
 
     if (name === "") {
       setIsValidNameMSG("이름을 입력해주세요.");
+      return false;
     } else {
       setIsValidName(true);
       setIsValidNameMSG("");
@@ -362,8 +361,10 @@ const MyInforChangeComponents: React.FunctionComponent<MyInforChangeProps> = ({
 
     if (birthDate === "") {
       setIsValidBirthDateMSG("생년월일을 입력해주세요.");
+      return false;
     } else if (!birthRule.test(birthDate)) {
       setIsValidBirthDateMSG("생년월일을 다시 확인해주세요.");
+      return false;
     } else {
       setIsValidBirthDate(true);
       setIsValidBirthDateMSG("");
@@ -371,6 +372,7 @@ const MyInforChangeComponents: React.FunctionComponent<MyInforChangeProps> = ({
 
     if (gender === "") {
       setIsValidGenderMSG("성별을 선택해주세요.");
+      return false;
     } else {
       setIsValidGender(true);
       setIsValidGenderMSG("");
@@ -378,10 +380,13 @@ const MyInforChangeComponents: React.FunctionComponent<MyInforChangeProps> = ({
 
     if (email === "") {
       setIsValidEmailMSG("이메일을 입력해주세요.");
+      return false;
     } else if (!emailRule.test(email)) {
       setIsValidEmailMSG("이메일 형식이 유효하지 않습니다.");
+      return false;
     } else if (domain !== "gmail.com") {
       setIsValidEmailMSG("현재 변경 가능한 이메일은 gmail.com입니다.");
+      return false;
     } else {
       setIsValidEmail(true);
       setIsValidEmailMSG("");
@@ -389,21 +394,15 @@ const MyInforChangeComponents: React.FunctionComponent<MyInforChangeProps> = ({
 
     if (phoneNumber === "") {
       setIsValidPhoneNumberMSG("전화번호를 입력해주세요.");
+      return false;
     } else if (!PhoneRule.test(PhoneCheck)) {
       setIsValidPhoneNumberMSG("전화번호를 다시 확인해주세요.");
+      return false;
     } else {
       setIsValidPhoneNumber(true);
       setIsValidPhoneNumberMSG("");
     }
-    if (
-      !isValidName ||
-      !isValidBirthDate ||
-      !isValidEmail ||
-      !isValidGender ||
-      !isValidPhoneNumber
-    ) {
-      return false;
-    }
+
     return true;
   };
 
