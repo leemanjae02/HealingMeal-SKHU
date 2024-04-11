@@ -156,33 +156,6 @@ const MainPage = observer(() => {
     }
   };
 
-  const getNextDayMidnightTime = () => {
-    //매일 자정까지의 시간을 계산
-    const now = new Date();
-    const midnight = new Date(
-      now.getFullYear(),
-      now.getMonth(),
-      now.getDate() + 1, // 다음날
-      0, //0시
-      0, //0분
-      0 //0초
-    );
-    return midnight.getTime() - now.getTime();
-  };
-
-  useEffect(() => {
-    const nextMidnightTime = getNextDayMidnightTime(); //자정까지의 시간 계산
-
-    const timer = setTimeout(() => {
-      //매일 자정 실행
-      window.location.reload();
-    }, nextMidnightTime);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
-
   const checkMeal = async () => {
     try {
       const response = await CustomAxios.get(AuthStore.userID + "/check");
@@ -379,18 +352,6 @@ const MainPage = observer(() => {
   const clickSignup = () => {
     navigate("/signup");
   };
-
-  // const DeleteMeal = async () => {
-  //   try {
-  //     const response = await CustomAxios.delete("/delete");
-  //     if (response.status === 200) {
-  //       console.log("식단초기화 성공", response.data);
-  //       await checkMeal();
-  //     }
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
 
   const foods = [
     {
