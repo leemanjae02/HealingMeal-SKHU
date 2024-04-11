@@ -5,11 +5,12 @@
 
 # Member
 | Backend      | Backend    |  Frontend  |
-|------------|------------|------------|
+|<img src= "https://github.com/leemanjae02/HealingMeal-SKHU/assets/144561017/c0bb6af6-4f2b-4a47-a6e1-a8ed404ec16a" width="250">|<img 
 |--------------|------------|------------|
 | Jinyong Hyun | Inho Choi  | Manjae Lee |
 <br>
 <br>
+
 
 # Repository
 - BackEnd : https://github.com/inhooo00/HealingMeal-SKHU
