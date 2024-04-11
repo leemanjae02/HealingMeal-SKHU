@@ -6,7 +6,7 @@
 # Member
 | Backend      | Backend    |  Frontend  |
 |--------------|------------|------------|
-|<img width="250" alt="스크린샷 2024-04-06 오후 9 36 52" src="https://github.com/leemanjae02/HealingMeal-SKHU/assets/144561017/30a1cf50-36e0-41bc-9334-36417f648622">|
+|<img width="200" alt="스크린샷 2024-04-06 오후 9 36 52" src="https://github.com/leemanjae02/HealingMeal-SKHU/assets/144561017/30a1cf50-36e0-41bc-9334-36417f648622">|
 |<img width="250" alt="스크린샷 2024-04-06 오후 9 36 52" src="https://github.com/leemanjae02/HealingMeal-SKHU/assets/144561017/30a1cf50-36e0-41bc-9334-36417f648622">|
 |<img width="250" alt="스크린샷 2024-04-06 오후 9 36 52" src="https://github.com/leemanjae02/HealingMeal-SKHU/assets/144561017/30a1cf50-36e0-41bc-9334-36417f648622">|
 
