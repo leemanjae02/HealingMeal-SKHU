@@ -6,6 +6,7 @@
 # Member
 | Backend      | Backend    |  Frontend  |
 |--------------|------------|------------|
+|--------------|------------|------------|
 | Jinyong Hyun | Inho Choi  | Manjae Lee |
 <br>
 <br>
