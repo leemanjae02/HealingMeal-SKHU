@@ -1,7 +1,5 @@
 # Healing Meal Project
 <br>
-<br>
-
 <img src="https://github.com/leemanjae02/HealingMeal-SKHU/assets/144561017/f5269efb-3bb9-4132-8019-364c1c27a5db">
 <br>
 
