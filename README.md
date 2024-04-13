@@ -2,9 +2,8 @@
 <br>
 <br>
 
-<img src="https://github.com/leemanjae02/HealingMeal-SKHU/assets/144561017/07fb0d04-f46f-4359-a08e-70bc32d2ec55">
-
-
+<img src="https://github.com/leemanjae02/HealingMeal-SKHU/assets/144561017/f5269efb-3bb9-4132-8019-364c1c27a5db">
+<br>
 
 # Member
 | Backend      | Backend    |  Frontend  |
