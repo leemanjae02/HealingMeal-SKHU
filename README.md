@@ -2,7 +2,7 @@
 <br>
 <br>
 
-<img width="400" src="https://github.com/leemanjae02/HealingMeal-SKHU/assets/144561017/c8c0b1d3-6da4-4a1b-96a4-c0eee0f39a88">
+<img src="https://github.com/leemanjae02/HealingMeal-SKHU/assets/144561017/07fb0d04-f46f-4359-a08e-70bc32d2ec55">
 
 
 
